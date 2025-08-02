@@ -18,3 +18,17 @@
 <i class="fa-brands fa-flickr"></i>
 
 <i class="fa-brands fa-linkedin-in"></i>
+
+
+<-- background color -->
+#2c283b
+<-- header color -->
+#b22222
+<-- footer color -->
+#2c283b
+<-- content color>
+#ffffff
+
+
+
+

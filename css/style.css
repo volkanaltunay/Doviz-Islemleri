@@ -1,3 +1,122 @@
 body{
     background: #e9e9e9;
 }
+
+.navbar {
+  /* position: fixed; */
+   /* top: 0;*/
+  width: 100%; 
+  background: #ffffff;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 20px 50px;
+  z-index: 1000;
+  /* transition: background 0.3s ease; */
+}
+.navbar-container{
+    display: flex;
+    gap: 45px;
+    padding-bottom: 10px;
+}
+.text{
+    display: flex;
+    height: 33.61px;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.logo {
+  display: flex;
+  width: 220px;
+  height: 53.99px; 
+  margin-left: 300px;
+}
+
+.input-group{
+    width: 600px;
+    height: 35.99px;
+    gap: 0;
+}
+.input-group input{
+    text-align: center;
+    width: 470px;
+    height: 35.99px;;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.input-group button{
+    height: 35.99px;
+    width: 50px;
+    background: #2c283b;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.input-group button i{
+    color: #ffffff;
+}
+.navigation-tcmb{
+    background: #b22222;
+    display: flex;
+    text-align: center;
+    width: 1249px;
+    height: 40px;
+    margin-left: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nav-space{
+    display: flex;
+    gap: 20px;
+}
+.nav-link-tcmb{
+    text-align: center;
+    display: flex;
+    height: 33.61px;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.nav-link-tcmb h2{
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 45px;
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+ .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    display: none;
+    border-bottom-left-radius: 14px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+} 
+
+.banner-section{
+    background: #ffffff;
+    display: flex;
+    width: 1249px;
+    height: 550px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+}

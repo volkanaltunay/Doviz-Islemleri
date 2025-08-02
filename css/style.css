@@ -194,6 +194,7 @@ body{
 .sublink-container .card img{
     width: 353.67px;
     height: 150.89px;
+    margin-top: 10px;
     border-radius: 16px;
 }
 
@@ -210,7 +211,6 @@ body{
 .footer-gray{
     display: flex;
     background: #2c283b;
-    margin-bottom: 5px;
     height: 70px;
     
 }

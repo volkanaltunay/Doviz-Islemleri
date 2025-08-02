@@ -1,0 +1,20 @@
+<-- navbar -->
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<-- slider -->
+
+<i class="fa-solid fa-envelope"></i>
+
+<-- footer -->
+<i class="fa-brands fa-x-twitter"></i>
+ 
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-flickr"></i>
+
+<i class="fa-brands fa-linkedin-in"></i>

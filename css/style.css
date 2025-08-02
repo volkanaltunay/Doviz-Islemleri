@@ -53,6 +53,7 @@ body{
 }
 .input-group button i{
     color: #ffffff;
+    font-size: 18px;
 }
 .navigation-tcmb{
     background: #b22222;
@@ -203,7 +204,7 @@ body{
 
 .footer-tcmb-sub{
     display: flex;
-    margin-left:550px;
+    margin-left:610px;
     margin-bottom: 10px;
 }
 .footer-gray{
@@ -223,4 +224,79 @@ body{
 .footer-gray-wrap_w-clearfix .link h4{
     color: #ffffff;
     font-size: 12px;
+}
+.links-section_w-clearfix{
+    display: flex;
+}
+.articel_1{
+    background: #2c283b;
+    width: 360px;
+    height: 380px;
+    margin-left: 395px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.articel_1:hover{
+    background: rgba(161, 101, 21, 0.603);
+
+}
+.articel_1 img{
+    width: 360px;
+    height: 216px;
+    border-radius: 16px;
+}
+.articel_1 h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.articel_1 p{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.articel_1 i{
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 310px;
+}
+.articel_2{
+    background: #ffffff;
+    width: 780px;
+    height: 380px;
+    margin-left: 20px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.articel_2 .card img{
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 220px;
+    height: 125px;
+}
+.articel_2 p{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.articel_2 p strong{
+    color: #b22222;
+}
+.articel_2 button{
+    margin-left: 100px;
+    width: 150px;
+    background: #ffffff;
+    color: #b22222;
+    border-radius: 12px;
+
+}
+.articel_2 button:hover{
+    margin-left: 100px;
+    width: 150px;
+    background: #b22222;
+    color: #ffffff;
+    border-radius: 12px;
+
 }

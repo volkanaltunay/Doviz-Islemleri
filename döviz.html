@@ -12,19 +12,6 @@
 </head>
 <style>
 
-    * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-head {
-    display: none;
-}
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
 body {
     margin: 0;
     min-height: 100%;
@@ -34,35 +21,16 @@ body {
     line-height: 20px;
     color: #333;
 }
-.header {
-    position: relative;
-    z-index: 100;
-    padding-right: 10px;
-    padding-left: 10px;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.header, .main {
-    display: block;
-    margin-left: auto;
-}
-.header, .home-content {
-    -webkit-box-orient: horizontal;
-}
-.footer-gray-wrap, .header, .main {
-    max-width: 1360px;
-    margin-right: auto;
-}
-.evds-chart-box, .header, .home-content, .links-tabs, .nav-mega-highlight {
-    -webkit-box-direction: normal;
-}
     .graphics-container_w-clearfix{
         background: #e9e9e9;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 </style>
 <body>
@@ -76,9 +44,9 @@ body {
         <p>Merkez Bankasının temel amacı <br><strong>fiyat istikrarını</strong> sağlamaktır.</p>
     </div>
              <form>
-            <div class="input-group">                             
+            <div class="input-group">            
             <input type="text" class="form-control" placeholder=" ">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>                          
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>         
              </div>
             </form> 
         </div>
@@ -121,61 +89,60 @@ body {
           <a href="/wps/wcm/connect/TR/TCMB+TR/Main+Page+Site+Area/Bugun" class="sub-breadcrumb-link w-inline-block">Bugün</a>
 	  </div>
     </div>
-</section>
+     </section>
 
-
+    <!-- content kur hesaplama -->
+         <section class="graphics-section">
+                 <br><br>
+            <div class="graphics-container_w-clearfix">
+            </div>
+        </section>
+        
     <div class="sub-home-content2">
       <header class="block-header2">
         <h1 class="block-header2-title">Bugün</h1>
       </header>
-<div class="block-share">
- <div class="block-share-box">
-  <div class="block-share-text">
-   
-    Paylaş
-   
-   
-  </div>
-  <a href="https://twitter.com/intent/tweet?url=http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Page+Site+Area/Bugun" title="twitter" target="" class="block-share-link t w-inline-block"></a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Page+Site+Area/Bugun" title="facebook" target="" class="block-share-link f w-inline-block"></a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Page+Site+Area/Bugun" title="linkedin" target="" class="block-share-link l w-inline-block"></a>
-  <a class="block-share-text printit" href="#">
-  
-   Yazdır
-  
-  
-  </a>
-  <a href="#" class="block-share-link p w-inline-block printit"></a>
- </div>
-</div>
-<div id="data">
-<div id="contentContainer"><div id="kurlarContainer" class="table-responsive">
-<h1>01.08.2025 Günü Saat 15:30'da Belirlenen Gösterge Niteliğindeki Türkiye Cumhuriyet Merkez Bankası Kurları</h1>
-<span class="tcmbfont">Indicative Exchange Rates Announced at 15:30 on 08/01/2025 by the Central Bank of Türkiye</span><br><span class="tcmbfont">Bülten No: 2025/143</span><table class="kurlarTablo" border="0" cellpadding="0" cellspacing="0">
-<thead><tr>
-<th>
-<strong>Döviz Kodu</strong><br>Currency Code</th>
-<th>
-<strong>Birim</strong><br>Unit</th>
-<th>
-<strong>Döviz Cinsi</strong><br>Currency</th>
-<th>
-<strong>Döviz Alış</strong><br>Forex Buying</th>
-<th>
-<strong>Döviz Satış</strong><br>Forex Selling</th>
-<th>
-<strong>Efektif Alış</strong><br>Banknote Buying</th>
-<th>
-<strong>Efektif Satış</strong><br>Banknote Selling</th>
-</tr></thead>
-<tbody><tr>
-<td class="para kurkodu">
-<span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/USD.gif');
-                 ">
-                 &nbsp;
+    <div class="block-share">
+    <div class="block-share-box">
+        <div class="block-share-text">Paylaş</div>
+        <div class="block-share-text"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="block-share-text"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="block-share-text"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="block-share-text">Yazdır <i class="fa-solid fa-print"></i></div>
+        <!-- <a href="#" title="twitter" target="" class="block-share-link t w-inline-block"></a>
+        <a href="#" title="facebook" target="" class="block-share-link f w-inline-block"></a>
+        <a href="#" title="linkedin" target="" class="block-share-link l w-inline-block"></a>
+        <a class="block-share-text printit" href="#">Yazdır</a>
+        <a href="#" class="block-share-link p w-inline-block printit"></a> -->
+    </div>
+    </div>
+    <div id="data">
+    <div id="contentContainer"><div id="kurlarContainer" class="table-responsive">
+    <h1>01.08.2025 Günü Saat 15:30'da Belirlenen Gösterge Niteliğindeki Türkiye Cumhuriyet Merkez Bankası Kurları</h1>
+    <span class="tcmbfont">Indicative Exchange Rates Announced at 15:30 on 08/01/2025 by the Central Bank of Türkiye</span><br><span class="tcmbfont">Bülten No: 2025/143
+    </span><table class="kurlarTablo"cellpadding="0" cellspacing="0">
+    <thead><tr>
+    <th>
+    <strong>Döviz Kodu</strong><br>Currency Code</th>
+    <th>
+    <strong>Birim</strong><br>Unit</th>
+    <th>
+    <strong>Döviz Cinsi</strong><br>Currency</th>
+    <th>
+    <strong>Döviz Alış</strong><br>Forex Buying</th>
+    <th>
+    <strong>Döviz Satış</strong><br>Forex Selling</th>
+    <th>
+    <strong>Efektif Alış</strong><br>Banknote Buying</th>
+    <th>
+    <strong>Efektif Satış</strong><br>Banknote Selling</th>
+    </tr></thead>
+    <tbody><tr>
+    <td class="para kurkodu">
+    <span class="kurgorsel" style="
+                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/USD.gif');">&nbsp;
 		 </span>USD/TRY
-	 </td>
+	</td>
 <td class="para birim">1</td>
 <td class="para">ABD DOLARI</td>
 <td class="deger">40.5190</td>
@@ -186,9 +153,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AUD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AUD.gif');">&nbsp;
 		 </span>AUD/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -201,9 +166,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/DKK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/DKK.gif');">&nbsp;
 		 </span>DKK/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -216,9 +179,9 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/EUR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/EUR.gif');
+">
+&nbsp;
 		 </span>EUR/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -231,9 +194,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/GBP.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/GBP.gif')">&nbsp;
 		 </span>GBP/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -246,9 +207,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CHF.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CHF.gif');">&nbsp;
 		 </span>CHF/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -261,9 +220,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SEK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SEK.gif');">&nbsp;
 		 </span>SEK/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -276,9 +233,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CAD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CAD.gif');">&nbsp;
 		 </span>CAD/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -291,9 +246,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KWD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KWD.gif');">&nbsp;
 		 </span>KWD/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -306,9 +259,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/NOK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/NOK.gif');">&nbsp;
 		 </span>NOK/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -321,9 +272,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SAR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SAR.gif');">&nbsp;
 		 </span>SAR/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -336,9 +285,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/JPY.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/JPY.gif');">&nbsp;
 		 </span>JPY/TRY
 	 </td>
 <td class="para birim">100</td>
@@ -351,9 +298,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/BGN.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/BGN.gif');">&nbsp;
 		 </span>BGN/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -366,9 +311,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RON.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RON.gif');">&nbsp;
 		 </span>RON/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -381,9 +324,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RUB.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RUB.gif');">&nbsp;
 		 </span>RUB/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -396,9 +337,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CNY.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CNY.gif');">&nbsp;
 		 </span>CNY/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -411,9 +350,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/PKR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/PKR.gif');">&nbsp;
 		 </span>PKR/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -426,9 +363,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/QAR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/QAR.gif');">&nbsp;
 		 </span>QAR/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -441,9 +376,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KRW.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KRW.gif');">&nbsp;
 		 </span>KRW/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -456,9 +389,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AZN.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AZN.gif');">&nbsp;
 		 </span>AZN/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -471,9 +402,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AED.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AED.gif');">&nbsp;
 		 </span>AED/TRY
 	 </td>
 <td class="para birim">1</td>
@@ -496,9 +425,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AUD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AUD.gif');">&nbsp;
 			</span>
 			 USD/AUD</td>
 <td class="para birim">1</td>
@@ -509,9 +436,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/DKK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/DKK.gif');">&nbsp;
 			</span>
 			 USD/DKK</td>
 <td class="para birim">1</td>
@@ -522,9 +447,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CHF.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CHF.gif');">&nbsp;
 			</span>
 			 USD/CHF</td>
 <td class="para birim">1</td>
@@ -535,9 +458,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SEK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SEK.gif');">&nbsp;
 			</span>
 			 USD/SEK</td>
 <td class="para birim">1</td>
@@ -548,9 +469,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/JPY.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/JPY.gif');">&nbsp;
 			</span>
 			 USD/JPY</td>
 <td class="para birim">1</td>
@@ -561,9 +480,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CAD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CAD.gif');">&nbsp;
 			</span>
 			 USD/CAD</td>
 <td class="para birim">1</td>
@@ -574,9 +491,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/NOK.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/NOK.gif');">&nbsp;
 			</span>
 			 USD/NOK</td>
 <td class="para birim">1</td>
@@ -587,9 +502,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SAR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/SAR.gif');">&nbsp;
 			</span>
 			 USD/SAR</td>
 <td class="para birim">1</td>
@@ -600,9 +513,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/EUR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/EUR.gif');">&nbsp;
 				</span>EUR/USD</td>
 <td class="para birim">1</td>
 <td class="para tabanisim">EURO</td>
@@ -612,9 +523,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/GBP.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/GBP.gif');">&nbsp;
 				</span>GBP/USD</td>
 <td class="para birim">1</td>
 <td class="para tabanisim">İNGİLİZ STERLİNİ</td>
@@ -624,9 +533,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KWD.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KWD.gif');">&nbsp;
 				</span>KWD/USD</td>
 <td class="para birim">1</td>
 <td class="para tabanisim">KUVEYT DİNARI</td>
@@ -636,9 +543,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/BGN.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/BGN.gif');">&nbsp;
 			</span>
 			 USD/BGN</td>
 <td class="para birim">1</td>
@@ -649,10 +554,8 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RON.gif');
-                 ">
-                 &nbsp;
-			</span>
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RON.gif');">&nbsp;			
+    </span>
 			 USD/RON</td>
 <td class="para birim">1</td>
 <td class="para tabanisim">ABD DOLARI</td>
@@ -662,9 +565,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RUB.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/RUB.gif');">&nbsp;
 			</span>
 			 USD/RUB</td>
 <td class="para birim">1</td>
@@ -675,9 +576,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CNY.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/CNY.gif');">&nbsp;
 			</span>
 			 USD/CNY</td>
 <td class="para birim">1</td>
@@ -688,9 +587,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/PKR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/PKR.gif');">&nbsp;
 			</span>
 			 USD/PKR</td>
 <td class="para birim">1</td>
@@ -701,9 +598,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/QAR.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/QAR.gif');">&nbsp;
 			</span>
 			 USD/QAR</td>
 <td class="para birim">1</td>
@@ -714,9 +609,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KRW.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/KRW.gif');">&nbsp;
 			</span>
 			 USD/KRW</td>
 <td class="para birim">1</td>
@@ -727,9 +620,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AZN.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AZN.gif');">&nbsp;
 			</span>
 			 USD/AZN</td>
 <td class="para birim">1</td>
@@ -740,9 +631,7 @@ body {
 <tr>
 <td class="para kurkodu">
 <span class="kurgorsel" style="
-                     background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AED.gif');
-                 ">
-                 &nbsp;
+    background-image: url('http://www.tcmb.gov.tr/kurlar/kurlar_tr_dosyalar/images/AED.gif');">&nbsp;
 			</span>
 			 USD/AED</td>
 <td class="para birim">1</td>
@@ -756,26 +645,20 @@ body {
 </tr><tr>
 <td class="para kurkodu">SDR/USD</td>
 <td class="para birim">1</td>
-<td class="para tabanisim">ÖZEL ÇEKME HAKKI (SDR)                            </td>
+<td class="para tabanisim">ÖZEL ÇEKME HAKKI (SDR)           </td>
 <td class="deger caprazkur">1.35304</td>
 <td class="deger capraz">ABD DOLARI</td>
 </tr>
 <tr>
 <td class="para kurkodu">SDR/TRY</td>
 <td class="para birim">1</td>
-<td class="para tabanisim">ÖZEL ÇEKME HAKKI (SDR)                            </td>
+<td class="para tabanisim">ÖZEL ÇEKME HAKKI (SDR)           </td>
 <td class="deger caprazkur">54.8731</td>
 <td class="deger capraz">TÜRK LİRASI</td>
 </tr>
 </tbody></table>
 </div></div></div>
-</div>
-
-    <!-- content kur hesaplama -->
-         <section class="graphics-section">
-            <div class="graphics-container_w-clearfix">
-            </div>
-        </section>
-
+</div> 
+ 
 </body>
 </html>

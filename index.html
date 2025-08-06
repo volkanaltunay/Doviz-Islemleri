@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBh2FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>TCMB</title>
+    <style>
+        .swiper {
+  width: 600px;
+  height: 300px;
+}
+    </style>
 </head>
 <body>
     <!-- navbar -->
@@ -46,21 +55,38 @@
                     <h2>Duyurular ve Konuşmalar</h2>
                 </div>
                 <div class="nav-link-tcmb">
-                    <h2>Banknotlar</h2>
+                    <h2>Banknotlar<h2><i class="fa-solid fa-envelope"></i></h2></h2><h2><i class="fa-brands fa-font-awesome"></i></h2>
                 </div>
-                <div class="nav-link-tcmb">
-                    <h2><i class="fa-solid fa-envelope"></i></h2>
-                </div>
-            </div>
         </div>
      </nav>
+
     <!-- slider -->
      <main class="tcmbMainContent">
         <section class="banner-section">
-            <div class="banner-box_w-slider">
+            <!-- <div class="banner-box_w-slider"> -->
+                     <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="image/slider_1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="image/slider_2.webp" alt=""></div>
+    <div class="swiper-slide"><img src="image/slider_3.jpg" alt=""></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-            </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+            <!-- </div> -->
         </section>
+
         <section class="new-section">
             <div class="data-easing">
                 <div class="tab-menu_w-tab-menu">

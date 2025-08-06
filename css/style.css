@@ -76,7 +76,7 @@ body{
 }
 .nav-space{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .nav-link-tcmb{
     text-align: center;
@@ -84,11 +84,12 @@ body{
     height: 33.61px;
     font-size: 12px;
     padding-top: 10px;
+    padding-left: 40px;
 }
 .nav-link-tcmb h2{
     color: #ffffff;
     font-size: 14px;
-    padding-left: 45px;
+    padding-left: 10px;
 }
 
 /* Mobil görünüm */
@@ -417,7 +418,7 @@ body{
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 #contentContainer {

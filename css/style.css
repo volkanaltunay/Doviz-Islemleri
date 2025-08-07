@@ -1,5 +1,8 @@
 body{
     background: #e9e9e9;
+    display: B;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
@@ -7,6 +10,7 @@ body{
   background: #ffffff;
   padding: 20px 50px;
   z-index: 1000;
+  text-decoration: none;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -605,3 +609,71 @@ font-weight: 400;
 text-align: center;
 }
 
+/* .sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #2c283b;
+  border-radius: 14px;
+  padding: 0 14px;
+  color: #FFFFFF;
+  gap: 10px;
+  position: relative;
+
+  .toggle{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #008aab;
+
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+
+    .img{
+        width: 100px;
+        height: 20px;
+    }
+  }
+} */
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background: #fff;
+}
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form{
+    margin:  40px 0 20px 0;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+}
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solip #999;
+}
+form i{
+    border:  2px solid #008aab;
+}
+form .dop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
